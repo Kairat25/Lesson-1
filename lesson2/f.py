@@ -23,5 +23,5 @@ class Vito(Jack):
         print(f"'cat', {t}")
 
 brad = Vito('w', 'r', '789', 55)
-Vito.cat()
+print(brad)
 

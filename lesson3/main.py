@@ -3,7 +3,7 @@ class Balance:
     def __init__(self, num, username):
         self.num = num
         self.username = username
-
+        print(num, username)
 
     def __str__(self):
         return f"{self.username} balance = {self.num}"
