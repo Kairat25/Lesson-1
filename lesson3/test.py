@@ -13,28 +13,31 @@ class Fraction:
 
     def __add__(self, other):
         # print(other)
+        a = f'{self.numerator} / {self.denumerator} + {other.numerator} / {other.denumerator}'
         newnumerator = self.numerator * other.denumerator + self.denumerator * other.numerator
         newdenumerator = self.denumerator * other.denumerator
-        return Fraction(newnumerator, newdenumerator)
+        return f'{a} = {newnumerator}/{newdenumerator}'
 
     def __sub__(self, other):
+        a = f'{self.numerator} / {self.denumerator} - {other.numerator} / {other.denumerator}'
         newnumerator = self.numerator * other.denumerator - self.denumerator * other.numerator
         newdenumerator = self.denumerator * other.denumerator
-        return Fraction(newnumerator, newdenumerator)
+        return f'{a} = {newnumerator}/{newdenumerator}'
 
     def __mul__(self, other):
+        a = f'{self.numerator} / {self.denumerator} * {other.numerator} / {other.denumerator}'
         newnumerator = self.numerator * other.numerator
-
         newdenumerator = other.denumerator * self.denumerator
 
-        return Fraction(newnumerator, newdenumerator)
+        return f'{a} = {newnumerator}/{newdenumerator}'
 
     def __floordiv__(self, other):
+        a = f'{self.numerator} / {self.denumerator} / {other.numerator} / {other.denumerator}'
         newnumerator = self.numerator // other.numerator
         # print(newnumerator)
         newdenumerator = other.denumerator // self.denumerator
         # print(newdenumerator)
-        return Fraction(newnumerator, newdenumerator)
+        return f'{a} = {newnumerator}/{newdenumerator}'
 
 # num_fraction = Fraction(3,5)
 # num_fraction.show()
@@ -55,7 +58,7 @@ mulf2 = Fraction(3,2)
 mulf3 = mulf1 * mulf2
 print(mulf3)
 
-floordivf1 = Fraction(3,4)
-floordivf2 = Fraction(4,5)
+floordivf1 = Fraction(1,2)
+floordivf2 = Fraction(1,2)
 floordivf3 = floordivf1 // floordivf2
 print(floordivf3)
