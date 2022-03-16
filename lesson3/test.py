@@ -43,7 +43,7 @@ class Fraction:
 # num_fraction.show()
 
 # print(num_fraction)
-addf1 = Fraction(1,4)
+addf1 = Fraction(2,3)
 addf2 = Fraction(1,2)
 addf3 = addf1 + addf2
 print(addf3)

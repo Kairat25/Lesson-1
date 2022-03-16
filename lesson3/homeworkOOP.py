@@ -10,9 +10,9 @@ class Fraction:
     def __str__(self):
         return str(self.numerator) + "/" + str(self.denumerator)
 
-    # def __init__(self, numerator, denumerator):
-    #     self.numerator = numerator
-    #     self.denumerator = denumerator
+    def __init__(self, numerator, denumerator):
+        self.numerator = numerator
+        self.denumerator = denumerator
 
     #
     # def __add__(self, other):
@@ -54,10 +54,12 @@ class Fraction:
         return f'{a} = {newnumerator}/{newdenumerator}'
 
 
+
+
 num_fraction = Fraction(10, 20)
 
 
-addf1 = Fraction(1,4)
+addf1 = Fraction(3,4)
 addf2 = Fraction(1,2)
 addf3 = addf1 + addf2
 print(addf3)
