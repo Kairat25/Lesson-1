@@ -1,4 +1,4 @@
-# ., [14.03.2022 14: 29]
+
 import turtle
 
 t = turtle.Turtle()
