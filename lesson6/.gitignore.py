@@ -58,4 +58,4 @@ class Solution:
             else:
                 return peremennaia
 
-print(Solution().find_target(get_list(), 500))
+print(Solution().find_target(get_list(), 5000))
