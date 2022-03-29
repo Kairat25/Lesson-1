@@ -39,7 +39,7 @@
 
 # Solution().find_target(get_list(), 888888)
 def get_list() -> list:
-    return list(range(0, 1_000_000, 2))
+    return list(range(0, 10_000_000, 2))
 
 
 class Solution:
@@ -58,4 +58,4 @@ class Solution:
             else:
                 return peremennaia
 
-print(Solution().find_target(get_list(), 5000))
+print(Solution().find_target(get_list(), 200))
